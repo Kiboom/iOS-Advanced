@@ -1,2 +1,6 @@
-# iOS-Advanced
-iOS Advanced Problem Solving
+# iOS Advanced 문제 풀이
+
+| week | commit time |
+|----------------|-----------------------------------------------|
+| 1 | 2016.06.23 03:00 |
+

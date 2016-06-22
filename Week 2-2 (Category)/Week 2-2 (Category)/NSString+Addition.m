@@ -16,11 +16,24 @@
     return [self stringByAddingPercentEncodingWithAllowedCharacters:charSet];
 }
 
+
 - (NSArray *)filterHangulWord {
-    NSCharacterSet *charSet = [NSCharacterSet controlCharacterSet];
-    return [self index];
-    NSString *encodedURL = [self stringByAddingPercentEncodingWithAllowedCharacters:charSet];
-    return [encodedURL componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\\U"]];
+    NSMutableArray *wordList = [NSMutableArray array];
+    NSMutableString *word = [NSMutableString string];
+    
+    for(int i=0 ; i<self.length ; i++) {
+        unichar character = [self characterAtIndex:i];
+        if(character>44032 && character<55203) {
+            [word appendString:[NSString stringWithCharacters:&character length:1]];
+            continue;
+        }
+        if([word isEqualToString:@""] == NO) {  //add word to wordList when encounter non-Korean character right after Korean word
+            [wordList addObject:word];
+            NSLog(@"%@", word);
+            word = [NSMutableString string];    //reset word with an empty string
+        }
+    }
+    return wordList;
 }
 
 @end

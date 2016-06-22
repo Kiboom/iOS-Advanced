@@ -25,9 +25,12 @@
 }
 
 - (IBAction)buttonTouched:(id)sender {
+    /* fetch HTML data with encoded URL */
     [self fetchData];
-//    NSString *URLString = @"http://www.osxdev.org/forum/index.php?threads/swift-2-0에서-try-catch로-fatal-error-잡을-수-있나요.382/";
-//    NSLog(@"%@", [URLString filterHangulWord]);
+    
+    /* filter Hangul words */
+    NSString *URLString = @"http://www.osxdev.org/forum/index.php?threads/swift-2-0에서-try-catch로-fatal-error-잡을-수-있나요.382/";
+    [URLString filterHangulWord];
 }
 
 - (void)fetchData {
@@ -38,7 +41,9 @@
             completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                 NSString *dataString = [[NSString alloc] initWithData: data
                                             encoding: NSUTF8StringEncoding];
-                [self alertDataReceived:dataString];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self alertDataReceived:dataString];
+                });
             }] resume];
 }
 
