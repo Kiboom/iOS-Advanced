@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VkU-i3-pee">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3Y-4w-mRn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="다른 스토리보드로 가볼래?ㅋㅋ"/>
+                                <connections>
+                                    <segue destination="6cN-Wf-Jg4" kind="push" id="6vM-Oa-rtu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p3Y-4w-mRn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="avC-Ln-PfA"/>
+                            <constraint firstItem="p3Y-4w-mRn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mYk-xK-qBg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="p3Y-4w-mRn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="avC-Ln-PfA"/>
+                                <exclude reference="mYk-xK-qBg"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="p3Y-4w-mRn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="avC-Ln-PfA"/>
+                                <include reference="mYk-xK-qBg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="E9G-Ct-aPV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702.5" y="343"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="iMt-Er-1Ax">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Second" id="6cN-Wf-Jg4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="f4a-DB-wiZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqR-Ze-Vp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2289.75" y="343"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dAQ-Mo-vGB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VkU-i3-pee" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="veZ-Mr-cE6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oKd-cV-g24"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5l9-pJ-LqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="343"/>
+        </scene>
+    </scenes>
+</document>

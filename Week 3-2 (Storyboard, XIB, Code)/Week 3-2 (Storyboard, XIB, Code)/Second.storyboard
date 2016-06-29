@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rZU-Qw-2VZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="p4z-Ye-aVZ">
+            <objects>
+                <tableViewController id="rZU-Qw-2VZ" customClass="SecondViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="O7P-2E-hAa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="UiC-BL-9gG">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="184" id="1tn-YK-aR8">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1tn-YK-aR8" id="Id4-IS-rAy">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.88185225231749742" blue="0.22505412539070624" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="184" id="xJG-AH-7Os">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xJG-AH-7Os" id="hJ5-E1-rz3">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3yk-du-Gh1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="975-h6-7Tu">
+                                                            <variation key="widthClass=compact" constant="159"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="width" constant="240" id="iv0-Rp-rGJ">
+                                                            <variation key="widthClass=compact" constant="218"/>
+                                                        </constraint>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="975-h6-7Tu"/>
+                                                            <exclude reference="iv0-Rp-rGJ"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="975-h6-7Tu"/>
+                                                            <include reference="iv0-Rp-rGJ"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.41337221186805828" blue="0.27539327748903564" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="3yk-du-Gh1" firstAttribute="centerX" secondItem="hJ5-E1-rz3" secondAttribute="centerX" id="Jh7-Zm-fdq">
+                                                    <variation key="widthClass=compact" constant="0.0"/>
+                                                </constraint>
+                                                <constraint firstItem="3yk-du-Gh1" firstAttribute="centerY" secondItem="hJ5-E1-rz3" secondAttribute="centerY" id="kAG-JX-Uad"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="3yk-du-Gh1"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="Jh7-Zm-fdq"/>
+                                                    <exclude reference="kAG-JX-Uad"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="3yk-du-Gh1"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="Jh7-Zm-fdq"/>
+                                                    <include reference="kAG-JX-Uad"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.36134251555905339" blue="0.29596111315369467" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="184" id="Yqv-aG-q7R">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yqv-aG-q7R" id="Mg3-Gi-gS3">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.48027495850000002" green="0.44383947610000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.48027495852770064" green="0.44383947612051056" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="184" id="voa-eD-rw0">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="voa-eD-rw0" id="sKY-ZM-4xe">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.99073892640000005" green="0.93664764739999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.99073892639624361" green="0.9366476474174692" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="rZU-Qw-2VZ" id="NcX-b1-u2c"/>
+                            <outlet property="delegate" destination="rZU-Qw-2VZ" id="t7b-uR-dVd"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="secondCellImageView" destination="3yk-du-Gh1" id="mDe-nW-Ypi"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOW-UP-5pF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343.5" y="400"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="0.72380584403396497" blue="0.32122965571780704" alpha="1" colorSpace="calibratedRGB"/>
+</document>
