@@ -18,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    ThirdViewController *t = [ThirdViewController new];
+    [t hi];
 }
 
 - (void)didReceiveMemoryWarning {

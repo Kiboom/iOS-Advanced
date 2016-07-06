@@ -10,6 +10,7 @@
 
 @interface ThirdViewController : UIViewController
 
+@property int hi;
 - (IBAction)backButtonTouched:(id)sender;
 
 @end

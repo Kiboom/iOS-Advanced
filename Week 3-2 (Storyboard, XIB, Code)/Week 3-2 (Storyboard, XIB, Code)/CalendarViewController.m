@@ -26,11 +26,43 @@
     [self drawWeekDays];
     [self drawCalendarOfMonth:_currentCalendar.month
                        ofYear:_currentCalendar.year];
+    [self initiateButtons];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+
+- (void)initiateButtons {
+    UIButton *prev = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    UIButton *next = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    
+    prev.frame = CGRectMake(_horzOffset, _screenHeight-_vertOffset, 50, 25);
+    next.frame = CGRectMake(_screenWidth-_horzOffset, _screenHeight-_vertOffset, 50, 25);
+    
+    [prev addTarget:self action:@selector(goPrevMonth) forControlEvents:UIControlEventTouchUpInside];
+    [next addTarget:self action:@selector(goNextMonth) forControlEvents:UIControlEventTouchUpInside];
+    
+    [prev setTitle:@"prev" forState:UIControlStateNormal];
+    [next setTitle:@"next" forState:UIControlStateNormal];
+    [prev.titleLabel setFont:[UIFont fontWithName:@"System" size:12]];
+    [next.titleLabel setFont:[UIFont fontWithName:@"System" size:12]];
+    
+    [self.view addSubview:prev];
+    [self.view addSubview:next];
+    [self.view bringSubviewToFront:prev];
+    [self.view bringSubviewToFront:next];
+}
+
+
+- (void)goPrevMonth {
+    NSLog(@"prev");
+}
+
+- (void)goNextMonth {
+    NSLog(@"next");
 }
 
 
