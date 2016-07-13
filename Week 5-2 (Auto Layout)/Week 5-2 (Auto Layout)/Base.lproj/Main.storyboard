@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DX5-8G-PXI" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="276"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dVA-4I-iZV">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="276"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="watch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e3D-9o-UcJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="276"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="iphone6s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2ei-ea-DE4">
+                                                <rect key="frame" x="300" y="0.0" width="300" height="276"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.76239885524496642" blue="0.83884752516778527" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dVA-4I-iZV" firstAttribute="centerY" secondItem="DX5-8G-PXI" secondAttribute="centerY" id="IR2-Wb-b8c"/>
+                                    <constraint firstAttribute="height" priority="750" constant="276" id="LI6-8n-2qJ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="MaX-KJ-a8i"/>
+                                    <constraint firstItem="dVA-4I-iZV" firstAttribute="width" secondItem="DX5-8G-PXI" secondAttribute="width" id="NUl-dq-TnA"/>
+                                    <constraint firstItem="dVA-4I-iZV" firstAttribute="height" secondItem="DX5-8G-PXI" secondAttribute="height" id="jsf-Lq-Pjm"/>
+                                    <constraint firstItem="dVA-4I-iZV" firstAttribute="centerX" secondItem="DX5-8G-PXI" secondAttribute="centerX" id="uOS-EE-2Sf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TBA-vR-4af" userLabel="Middle View">
+                                <rect key="frame" x="0.0" y="276" width="600" height="24"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.80120071308724827" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Xye-5k-wTS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="zlv-hu-Q21"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="JhO-Ri-dDD" appends="YES" id="PCy-RK-OZW"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DQ6-2Z-WtE" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipad-pro.png" translatesAutoresizingMaskIntoConstraints="NO" id="MdE-fe-8jM">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="378"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.73288066275167785" green="1" blue="0.86160339765100669" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="MdE-fe-8jM" firstAttribute="width" secondItem="DQ6-2Z-WtE" secondAttribute="width" id="Pen-tt-UJg"/>
+                                    <constraint firstItem="MdE-fe-8jM" firstAttribute="height" secondItem="DQ6-2Z-WtE" secondAttribute="height" id="VoT-p7-4tb"/>
+                                    <constraint firstItem="MdE-fe-8jM" firstAttribute="centerX" secondItem="DQ6-2Z-WtE" secondAttribute="centerX" id="Y8F-ca-Sim"/>
+                                    <constraint firstAttribute="height" priority="750" constant="300" id="h0J-qE-8my"/>
+                                    <constraint firstItem="MdE-fe-8jM" firstAttribute="centerY" secondItem="DQ6-2Z-WtE" secondAttribute="centerY" id="wC2-wW-7Lh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="wd2-Pb-Acp"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="MdE-fe-8jM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="MdE-fe-8jM"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="wd2-Pb-Acp"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="DQ6-2Z-WtE" firstAttribute="top" secondItem="TBA-vR-4af" secondAttribute="bottom" id="4Gf-y1-oqD"/>
+                            <constraint firstItem="TBA-vR-4af" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="C7C-Iu-bhZ"/>
+                            <constraint firstItem="DX5-8G-PXI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Jcr-vM-nQF"/>
+                            <constraint firstItem="DQ6-2Z-WtE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Jy1-dY-cAt"/>
+                            <constraint firstItem="TBA-vR-4af" firstAttribute="top" secondItem="DX5-8G-PXI" secondAttribute="bottom" id="PS7-Nw-gjn"/>
+                            <constraint firstItem="DQ6-2Z-WtE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VlA-kJ-lNZ"/>
+                            <constraint firstItem="DX5-8G-PXI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="fhr-aC-eTi"/>
+                            <constraint firstItem="DX5-8G-PXI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8S-3a-AVC"/>
+                            <constraint firstItem="TBA-vR-4af" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rh6-bD-LUw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DQ6-2Z-WtE" secondAttribute="bottom" id="uVP-76-7og"/>
+                        </constraints>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="DX5-8G-PXI"/>
+                                <include reference="TBA-vR-4af"/>
+                                <include reference="DQ6-2Z-WtE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="DX5-8G-PXI"/>
+                                <include reference="TBA-vR-4af"/>
+                                <include reference="DQ6-2Z-WtE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="DX5-8G-PXI"/>
+                                <include reference="TBA-vR-4af"/>
+                                <include reference="DQ6-2Z-WtE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="panGestureRecognizer" destination="JhO-Ri-dDD" id="Ld1-B2-Lrb"/>
+                        <outlet property="view1" destination="DX5-8G-PXI" id="bLJ-KW-t4r"/>
+                        <outlet property="view2" destination="TBA-vR-4af" id="11T-qW-9kq"/>
+                        <outlet property="view3" destination="DQ6-2Z-WtE" id="1Ad-TX-m0N"/>
+                        <outlet property="view3Height" destination="h0J-qE-8my" id="QNy-DA-uUU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="JhO-Ri-dDD">
+                    <connections>
+                        <action selector="handlePanGesture:" destination="BYZ-38-t0r" id="ZVL-0d-62y"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="280" y="339"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ipad-pro.png" width="470" height="556"/>
+        <image name="iphone6s.jpg" width="1600" height="1200"/>
+        <image name="watch.jpg" width="1527" height="628"/>
+    </resources>
+</document>
