@@ -20,13 +20,13 @@
                             <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DX5-8G-PXI" userLabel="Top View">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="276"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dVA-4I-iZV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dVA-4I-iZV">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="276"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="watch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e3D-9o-UcJ">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="watch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e3D-9o-UcJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="276"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="iphone6s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2ei-ea-DE4">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="iphone6s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2ei-ea-DE4">
                                                 <rect key="frame" x="300" y="0.0" width="300" height="276"/>
                                             </imageView>
                                         </subviews>

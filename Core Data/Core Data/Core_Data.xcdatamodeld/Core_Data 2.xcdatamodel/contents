@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="Employee" representedClassName="EmployeeMO" syncable="YES">
+        <attribute name="firstName" attributeType="String" defaultValueString="디폴트 이름" syncable="YES"/>
+        <attribute name="lastName" attributeType="String" defaultValueString="키붐" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Employee" positionX="250" positionY="126" width="128" height="73"/>
+    </elements>
+</model>
