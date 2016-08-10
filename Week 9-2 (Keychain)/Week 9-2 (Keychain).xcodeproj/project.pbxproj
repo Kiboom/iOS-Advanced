@@ -15,6 +15,10 @@
 		E936CB341D5AC45F00A2044A /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E936CB331D5AC45F00A2044A /* KeychainService.swift */; };
 		E936CB361D5ACED000A2044A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E936CB351D5ACED000A2044A /* TableViewController.swift */; };
 		E936CB381D5AD21300A2044A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E936CB371D5AD21300A2044A /* AddViewController.swift */; };
+		E936CB3A1D5AD8C500A2044A /* 무민.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E936CB391D5AD8C500A2044A /* 무민.jpg */; };
+		E936CB3E1D5ADEE200A2044A /* explosion.gif in Resources */ = {isa = PBXBuildFile; fileRef = E936CB3B1D5ADEE200A2044A /* explosion.gif */; };
+		E936CB3F1D5ADEE200A2044A /* 몽키.png in Resources */ = {isa = PBXBuildFile; fileRef = E936CB3C1D5ADEE200A2044A /* 몽키.png */; };
+		E936CB401D5ADEE200A2044A /* 오드리.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E936CB3D1D5ADEE200A2044A /* 오드리.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		E936CB331D5AC45F00A2044A /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		E936CB351D5ACED000A2044A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E936CB371D5AD21300A2044A /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		E936CB391D5AD8C500A2044A /* 무민.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "무민.jpg"; sourceTree = "<group>"; };
+		E936CB3B1D5ADEE200A2044A /* explosion.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = explosion.gif; sourceTree = "<group>"; };
+		E936CB3C1D5ADEE200A2044A /* 몽키.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "몽키.png"; sourceTree = "<group>"; };
+		E936CB3D1D5ADEE200A2044A /* 오드리.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "오드리.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 				E936CB261D5AB79400A2044A /* Assets.xcassets */,
 				E936CB281D5AB79400A2044A /* LaunchScreen.storyboard */,
 				E936CB2B1D5AB79400A2044A /* Info.plist */,
+				E936CB391D5AD8C500A2044A /* 무민.jpg */,
+				E936CB3B1D5ADEE200A2044A /* explosion.gif */,
+				E936CB3C1D5ADEE200A2044A /* 몽키.png */,
+				E936CB3D1D5ADEE200A2044A /* 오드리.jpg */,
 			);
 			path = "Week 9-2 (Keychain)";
 			sourceTree = "<group>";
@@ -131,9 +143,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E936CB3A1D5AD8C500A2044A /* 무민.jpg in Resources */,
+				E936CB3F1D5ADEE200A2044A /* 몽키.png in Resources */,
 				E936CB2A1D5AB79400A2044A /* LaunchScreen.storyboard in Resources */,
 				E936CB271D5AB79400A2044A /* Assets.xcassets in Resources */,
 				E936CB251D5AB79400A2044A /* Main.storyboard in Resources */,
+				E936CB401D5ADEE200A2044A /* 오드리.jpg in Resources */,
+				E936CB3E1D5ADEE200A2044A /* explosion.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

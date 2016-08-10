@@ -16,7 +16,6 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         self.title = "학생 목록"
         students.loadInfoFromKeychain()
-        print(self.students.getInfo())
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -39,8 +38,10 @@ class TableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        cell.textLabel?.text = Array(self.students.getInfo().values)[indexPath.row]
-        cell.detailTextLabel?.text = "학번 : \(Array(self.students.getInfo().keys)[indexPath.row])"
+        cell.textLabel?.text = (self.students.getInfo()[indexPath.row]["이름"] as! String)
+        cell.detailTextLabel?.text = "학번 : \(self.students.getInfo()[indexPath.row]["학번"] as! String)"
+        let imageData: NSData = self.students.getInfo()[indexPath.row]["사진"] as! NSData
+        cell.imageView?.image = UIImage.init(data: imageData)
         return cell
     }
 

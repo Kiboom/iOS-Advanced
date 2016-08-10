@@ -11,17 +11,25 @@ import UIKit
 
 
 class Students: NSObject {
-    private var info: Dictionary = [String:String]()
+    private var info: Array = [[String:AnyObject]]()
+    private let photos: Array = [UIImage.init(named: "무민.jpg"),
+                                UIImage.init(named: "explosion.gif"),
+                                UIImage.init(named: "몽키.png"),
+                                UIImage.init(named: "오드리.jpg")]
     
     func addStudentInfo(id:String, name:String) {
         if Int(id) == nil {
             print("학번은 숫자만 입력 가능합니다!")
             return
         }
-        self.info[id] = name
+        self.info.append([
+            "학번" : id,
+            "이름" : name,
+            "사진" : UIImagePNGRepresentation(self.photos[Int(arc4random_uniform(4))]!)!
+            ])
     }
     
-    
+    /*
     func removeStudentInfo(id:String) {
         if Int(id) == nil {
             print("학번은 숫자만 입력 가능합니다!")
@@ -30,7 +38,6 @@ class Students: NSObject {
         self.info.removeValueForKey(id)
     }
     
-    
     func updateStudentInfo(id:String, name:String) {
         guard Int(id) != nil else {
             print("학번은 숫자만 입력 가능합니다!")
@@ -38,9 +45,10 @@ class Students: NSObject {
         }
         self.info[id] = name
     }
+     */
     
     
-    func getInfo() -> [String:String] {
+    func getInfo() -> [[String:AnyObject]] {
         return self.info
     }
     
@@ -58,9 +66,12 @@ class Students: NSObject {
     
     
     func loadInfoFromKeychain() {
+        if(KeychainService.loadToken() == nil) {
+            return
+        }
         let xmlData: NSData = KeychainService.loadToken()!
         do{
-            self.info = try NSPropertyListSerialization.propertyListWithData(xmlData, options:.MutableContainersAndLeaves, format: nil) as! [String : String]
+            self.info = try NSPropertyListSerialization.propertyListWithData(xmlData, options:.MutableContainersAndLeaves, format: nil) as! [[String : AnyObject]]
         } catch {
             print(error)
             return

@@ -9,9 +9,9 @@
 import UIKit
 import Security
 
-let serviceIdentifier = "MySerivice"
-let userAccount = "authenticatedUser"
-let accessGroup = "MySerivice"
+let serviceIdentifier = "MySerivice2"
+let userAccount = "authenticatedUser2"
+let accessGroup = "MySerivice2"
 
 let kSecClassValue = kSecClass as NSString
 let kSecAttrAccountValue = kSecAttrAccount as NSString
