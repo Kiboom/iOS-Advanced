@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5zO-dL-BZI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="6Gv-LW-ZT9">
+            <objects>
+                <collectionViewController id="5zO-dL-BZI" customClass="CollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="j2C-Yc-LvB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bHE-Pc-MaA">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Qjb-6T-VOn" customClass="CollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDI-He-m0B">
+                                            <rect key="frame" x="43" y="14" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="st3-Qd-0AS">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="50"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="CDI-He-m0B" firstAttribute="centerX" secondItem="Qjb-6T-VOn" secondAttribute="centerX" id="AqQ-IN-VFO"/>
+                                    <constraint firstItem="CDI-He-m0B" firstAttribute="centerY" secondItem="Qjb-6T-VOn" secondAttribute="centerY" id="E6U-Qq-Nno"/>
+                                    <constraint firstItem="st3-Qd-0AS" firstAttribute="centerY" secondItem="Qjb-6T-VOn" secondAttribute="centerY" id="Zla-Ac-PJd"/>
+                                    <constraint firstItem="st3-Qd-0AS" firstAttribute="width" secondItem="Qjb-6T-VOn" secondAttribute="width" id="k8M-UO-qTE"/>
+                                    <constraint firstItem="st3-Qd-0AS" firstAttribute="height" secondItem="Qjb-6T-VOn" secondAttribute="height" id="nPJ-ve-kYz"/>
+                                    <constraint firstItem="st3-Qd-0AS" firstAttribute="centerX" secondItem="Qjb-6T-VOn" secondAttribute="centerX" id="tY8-bK-but"/>
+                                </constraints>
+                                <size key="customSize" width="128" height="50"/>
+                                <connections>
+                                    <outlet property="imageView" destination="st3-Qd-0AS" id="l9t-Kq-rMY"/>
+                                    <outlet property="label" destination="CDI-He-m0B" id="CyZ-Sy-l4s"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="5zO-dL-BZI" id="vdQ-mQ-Kpb"/>
+                            <outlet property="delegate" destination="5zO-dL-BZI" id="9sj-5z-W3W"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DyC-5d-TOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="140"/>
+        </scene>
+    </scenes>
+</document>
