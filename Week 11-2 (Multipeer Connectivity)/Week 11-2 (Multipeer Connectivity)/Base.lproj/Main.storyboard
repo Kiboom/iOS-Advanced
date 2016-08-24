@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="INH-7a-gTp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxR-sH-BGe">
+                                <rect key="frame" x="56" y="88" width="22" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="connectButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u1u-dm-D3b"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7N3-xf-beQ">
+                                <rect key="frame" x="280" y="322" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="b0h-A8-FSs"/>
+                                    <constraint firstAttribute="height" constant="40" id="yfT-vz-fXC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU6-la-ChE">
+                                <rect key="frame" x="215" y="147" width="170" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.63261176350022863" blue="0.73583381110214929" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="NyA-Fz-djp"/>
+                                    <constraint firstAttribute="width" constant="170" id="SOP-fq-9R5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="100"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="plusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xwn-o8-0bM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teU-r9-qiP">
+                                <rect key="frame" x="215" y="417" width="170" height="120"/>
+                                <color key="backgroundColor" red="0.58562785555421804" green="0.85677083333333337" blue="0.78361100679315721" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="QVi-og-LMH"/>
+                                    <constraint firstAttribute="width" constant="170" id="sSh-I4-j8J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="100"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="minusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gE7-u5-AF1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="teU-r9-qiP" firstAttribute="top" secondItem="7N3-xf-beQ" secondAttribute="bottom" constant="55" id="5vb-k4-jjR"/>
+                            <constraint firstItem="gxR-sH-BGe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="36" id="DFf-FM-50m"/>
+                            <constraint firstItem="7N3-xf-beQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PG1-UB-ecY"/>
+                            <constraint firstItem="teU-r9-qiP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RFG-VZ-Vid"/>
+                            <constraint firstItem="qU6-la-ChE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aIp-Ke-3t9"/>
+                            <constraint firstItem="7N3-xf-beQ" firstAttribute="top" secondItem="qU6-la-ChE" secondAttribute="bottom" constant="55" id="cml-pw-bOi"/>
+                            <constraint firstItem="gxR-sH-BGe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="jRG-86-A3L"/>
+                            <constraint firstItem="7N3-xf-beQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="42" id="kP9-7J-3Ld"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4m3-RA-mcC"/>
+                    <connections>
+                        <outlet property="countLabel" destination="7N3-xf-beQ" id="qPo-9T-154"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="339"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NeI-ut-bys">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="INH-7a-gTp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Niu-yG-L9M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="c3B-U2-2Vh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuf-tk-KaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296" y="339"/>
+        </scene>
+    </scenes>
+</document>
