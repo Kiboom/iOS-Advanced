@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "English"; ObjectID = "68t-6U-qAf"; */
+"68t-6U-qAf.text" = "한쿡어";
+
+/* Class = "UILabel"; text = "Al Pacino"; ObjectID = "LRH-Oo-ScS"; */
+"LRH-Oo-ScS.text" = "백윤식";
+
+/* Class = "UILabel"; text = "Alfredo James \"Al\" Pacino is an American actor of stage and screen, filmmaker, and screenwriter. Pacino has had a career spanning fifty years, during which time he has received numerous accolades and honors both competitive and honorary, among them an Academy Award, two Tony Awards, two Primetime Emmy Awards, a British Academy Film Award, four Golden Globe Awards, the Lifetime Achievement Award from the American Film Institute, the Golden Globe Cecil B. DeMille Award, and the National Medal of Arts. He is also one of few performers to have won a competitive Oscar, an Emmy and a Tony Award for acting, dubbed the \"Triple Crown of Acting\"."; ObjectID = "QZu-si-eqx"; */
+"QZu-si-eqx.text" = " 대한민국의 명품 배우이다. 충무로 대표 씬 스틸러. 주로 주인공의 아버지 역할을 맡는 일반적인 중견배우들과 달리, 아버지 역할보다는 캐릭터가 살아 있는 스승이나, 조언자, 은둔 고수 혹은 주인공 앞날 가로막으며 주인공을 성장시키는 악역 비스무리한 역들을 자주 맡는다.";
+
+/* Class = "UIButton"; normalTitle = "Birthday"; ObjectID = "Wrv-uP-CDs"; */
+"Wrv-uP-CDs.normalTitle" = "출생일";
